@@ -1,0 +1,6 @@
+@AcquiringBank.Simulator_HostAddress = http://localhost:5113
+
+GET {{AcquiringBank.Simulator_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,6 @@
+@Checkout.PaymentGateway.Api_HostAddress = http://localhost:5240
+
+GET {{Checkout.PaymentGateway.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
