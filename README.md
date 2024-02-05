@@ -15,7 +15,7 @@ b. To retrieve details of a previously made payment.
 - MerchantId and PaymentReference is known and passed from the merchant
 - Acquiring Bank Simulator returns failure(bad request) for certain blacklisted cards, The blacklisted cards set up are : 5555555555554444,6011000990139424,3530111333300000
 - Transaction Statuses are Approved, Declined, ProcessingError, SuspectedFraud, InternalError, Processing.
-
+- Different validation like excessive amount(more than 1 million as an assumption) or amount lower than 0,card checks can cause Bad request
 
 #### Software Design Approach
 [Domain Driven Design](https://learn.microsoft.com/en-us/archive/msdn-magazine/2009/february/best-practice-an-introduction-to-domain-driven-design/) 
