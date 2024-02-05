@@ -153,7 +153,7 @@ Efficient test coverage using Nunit and moq accross the different layers of the 
 
 
 
-#### ✨Extra  Miles✨ 
+#### ✨Improvements and Recommendations✨ 
 - A proper database infrastructure would be ideal instead of an in-memory state
 - Complete containerization using docker
 - Include cicd pipeline using github actions or jenkins
