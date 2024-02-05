@@ -147,6 +147,10 @@ Retry policy using Polly to handle exceptions that might occur during an HTTP re
 Rate limiting is a technique used to restrict the number of requests or transactions that a client (e.g., an application or user) can make to a payment system within a specific time frame.
 The rate limit configuration is set up in the appsettings.json in Checkout.PaymentGateway.Api project
 
+**Test Coverage**
+Efficient test coverage using Nunit and moq accross the different layers of the application
+
+
 
 **Areas of Improvement**
 - A proper database infrastructure would be ideal instead of an in-memory state
