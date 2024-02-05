@@ -16,6 +16,7 @@ b. To retrieve details of a previously made payment.
 - Acquiring Bank Simulator returns failure(bad request) for certain blacklisted cards, The blacklisted cards set up are : 5555555555554444,6011000990139424,3530111333300000
 - Transaction Statuses are Approved, Declined, ProcessingError, SuspectedFraud, InternalError, Processing.
 
+
 #### Software Design Approach
 [Domain Driven Design](https://learn.microsoft.com/en-us/archive/msdn-magazine/2009/february/best-practice-an-introduction-to-domain-driven-design/) 
 Mediator Design Pattern in C#
@@ -152,7 +153,7 @@ Efficient test coverage using Nunit and moq accross the different layers of the 
 
 
 
-**Areas of Improvement**
+#### ✨Extra  Miles✨ 
 - A proper database infrastructure would be ideal instead of an in-memory state
 - Complete containerization using docker
 - Include cicd pipeline using github actions or jenkins
@@ -162,3 +163,9 @@ Efficient test coverage using Nunit and moq accross the different layers of the 
 - A much more robust test case alongside with an automated unit test, typical scenarios such as an automated load test to ensure that the api can handle and respond to a specific threashold of request.
 - Efficient file logging that can be fed to various data monitoring tools like Datadog or cloud watch
 - Add Obervability metrics that can be fed to observability service like datadog for monitoring
+
+
+#### ✨Cloud Technologies to consider✨ 
+- Building a payment gateway system involves a lot of sensitive data and transactions, hence it is important to consider a cloud provider that is PCI DSS compliant. AWS as a cloud provider has a lot of services that are PCI DSS compliant and can be used to build a secure payment gateway system.
+- Concepts like Encryption and Tokenization, Fraud Detection and Prevention using machine learning models and secure authentication is paramont for building the payment gateway.
+- High Availability,Scalability and Fault Tolerance are also important concepts to consider when building a payment gateway system. AWS has a lot of services that can be used to achieve these concepts such as AWS Auto Scaling, AWS Elastic Load Balancing, AWS RDS Multi-AZ, AWS Aurora, AWS DynamoDB, AWS S3, AWS CloudFront etc are important services that can be used to achieve these concepts.
