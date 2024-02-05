@@ -12,7 +12,7 @@ namespace Checkout.PaymentGateway.Application.Validators
             if (!IsCardNumberValid(createPaymentCommand.Card?.Number!))
                 throw new PaymentValidationException("Card number is not valid");
 
-            if (createPaymentCommand.Amount <= 0)
+            if (!IsValidAmount(createPaymentCommand.Amount))
                 throw new PaymentValidationException("Amount is not valid");
 
             var currency = Currencies.SupportedCurrencies.Contains(createPaymentCommand.Currency, StringComparer.OrdinalIgnoreCase);
@@ -36,6 +36,13 @@ namespace Checkout.PaymentGateway.Application.Validators
                 Merchant = createPaymentCommand.Merchant,
                 IdempotencyKeyId = createPaymentCommand.IdempotencyKeyId
             };
+        }
+
+        public static bool IsValidAmount(decimal amount)
+        {
+            const decimal maxAmount = 1000000.00M;
+
+            return amount is >= 0 and <= maxAmount;
         }
 
         public static bool IsCvvNumberValid(string cvv)

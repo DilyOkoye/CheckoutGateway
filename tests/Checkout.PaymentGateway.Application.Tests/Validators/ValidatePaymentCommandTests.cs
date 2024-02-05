@@ -30,6 +30,7 @@ namespace Checkout.PaymentGateway.Application.Tests.Validators
 
         [TestCase("1234567890123456", "Card number is not valid")]
         [TestCase("5105105105105100", "Amount is not valid", -10)]
+        [TestCase("5105105105105100", "Amount is not valid", 100000000)]
         [TestCase("5105105105105100", "Currency is not valid", 10, "XYZ")]
         [TestCase("5105105105105100", "Expiration Date is not valid", 10, "GBP", "01/2000")]
         [TestCase("5105105105105100", "CVV is not valid", 10, "GBP", "01/2027", "22")]
