@@ -1,6 +1,10 @@
 # Checkout.PaymentGateway API
 ###### Responsible for validating requests, storing card information and forwarding payment requests and accepting payment responses to and from the acquiring bank.
 
+General Flow Diagram
+![alt text](https://www.websequencediagrams.com/cgi-bin/cdraw?lz=SWRlbXBvdGVuY3kKCkNsaWVudC0-U2VydmVyOiBQb3N0L1Bvc3RQYXltZW50e2kAJAota2V5Onh4eHh9Cm5vdGUgcmlnaHQgb2YgADUIUmVxdWVzdCBpcyBub24tADIJdChQcm9jZXNzIHRoZSBwAFQGKQoKAG8GLT4AgH8GOiA0MDAgKE5vIABpCyBrZXkAHwtEYXRhYmFzZToyMDA6IACBHQcgQ29uZmlybWVkCgCBAhcAgVgGIGhhcyBhbHJlYWR5IHNlZW4AgQoFAF4PLFxuAIE8DACBOgosXG4gRG8gbm90IHAAgUcHAIFDBwBvB292ZXIgAIFDCFJldHJ5AIIJCACCLjkAghERMjAwICgAgWgPYXRpb24pCg&s=default)
+
+
 #### ✨Deliverables ✨
 1. Build an API that allows a merchant:
 a. To process a payment through your payment gateway.
