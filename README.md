@@ -148,4 +148,5 @@ The rate limit configuration is set up in the appsettings.json in Checkout.Payme
 - Complete containerization using docker
 - Leveraging on Transactional outbox pattern and a proper pub/sub & queueing system (SNS,SQS) in place where once the payment or transaction is saved successfully in a database and a subsequently published to a queue, it can be subscribed via another instance to complete the transaction process
 - A much more robust test case alongside with an automated unit test, typical scenarios such as an automated load test to ensure that the api can handle and respond to a specific threashold of request.
-- Efficient file logging that can be fed to various data monitoring tools like Datadog
+- Efficient file logging that can be fed to various data monitoring tools like Datadog or cloud watch
+- Add Obervability metrics that can be fed to observability service like datadog for monitoring
