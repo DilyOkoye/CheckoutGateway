@@ -17,11 +17,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{21E29728-762
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{E2F0EF4A-3C29-4467-97CC-7BE54878C13D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Checkout.PaymentGateway.Infrastructure.Tests", "Checkout.PaymentGateway.Infrastructure.Tests\Checkout.PaymentGateway.Infrastructure.Tests.csproj", "{7E467249-D8E3-40E4-A8F7-71B43FF4D4FC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Checkout.PaymentGateway.Infrastructure.Tests", "tests\Checkout.PaymentGateway.Infrastructure.Tests\Checkout.PaymentGateway.Infrastructure.Tests.csproj", "{7E467249-D8E3-40E4-A8F7-71B43FF4D4FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Checkout.PaymentGateway.Application.Tests", "Checkout.PaymentGateway.Application.Tests\Checkout.PaymentGateway.Application.Tests.csproj", "{4DD74BFD-7C61-49E2-8D14-1AF16C46E4A0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Checkout.PaymentGateway.Application.Tests", "tests\Checkout.PaymentGateway.Application.Tests\Checkout.PaymentGateway.Application.Tests.csproj", "{4DD74BFD-7C61-49E2-8D14-1AF16C46E4A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Checkout.PaymentGateway.Api.Tests", "Checkout.PaymentGateway.Api.Tests\Checkout.PaymentGateway.Api.Tests.csproj", "{80438DFB-7CBB-4647-81A2-F25BB0401457}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Checkout.PaymentGateway.Api.Tests", "tests\Checkout.PaymentGateway.Api.Tests\Checkout.PaymentGateway.Api.Tests.csproj", "{80438DFB-7CBB-4647-81A2-F25BB0401457}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

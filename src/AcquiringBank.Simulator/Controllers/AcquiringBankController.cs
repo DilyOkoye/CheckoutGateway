@@ -5,19 +5,12 @@ namespace AcquiringBank.Simulator.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class AcquiringBankController : ControllerBase
+    public class AcquiringBankController(IPaymentService paymentService) : ControllerBase
     {
-        private readonly IPaymentService _paymentService;
-
-        public AcquiringBankController(IPaymentService paymentService)
-        {
-            _paymentService = paymentService;
-        }
-
         [HttpPost("process-payment")]
         public IActionResult ProcessPayment(PaymentRequest request)
         {
-            var response = _paymentService.ProcessPayment(request);
+            var response = paymentService.ProcessPayment(request);
             return Ok(response);
         }
     }

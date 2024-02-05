@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\src\Checkout.PaymentGateway.Application\Checkout.PaymentGateway.Application.csproj" />
+    <ProjectReference Include="..\..\src\Checkout.PaymentGateway.Application\Checkout.PaymentGateway.Application.csproj" />
   </ItemGroup>
 
 </Project>

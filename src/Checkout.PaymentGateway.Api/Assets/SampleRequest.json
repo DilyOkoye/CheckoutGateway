@@ -1,0 +1,60 @@
+// successfull response
+{
+  "merchant": {
+    "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+  },
+  "card": {
+    "number": "378282246310005",
+    "expirationDate": "01/2027",
+    "cvv": "322",
+    "holderName": "Dilichukwu Okoye"
+  },
+  "amount": 12,
+  "currency": "GBP"
+}
+
+
+//3 backlisted response
+{
+  "merchant": {
+    "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+  },
+  "card": {
+    "number": "5555555555554444",
+    "expirationDate": "01/2027",
+    "cvv": "322",
+    "holderName": "Dilichukwu Okoye"
+  },
+  "amount": 12,
+  "currency": "GBP"
+}
+
+
+{
+  "merchant": {
+    "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+  },
+  "card": {
+    "number": "6011000990139424",
+    "expirationDate": "01/2027",
+    "cvv": "322",
+    "holderName": "Dilichukwu Okoye"
+  },
+  "amount": 12,
+  "currency": "GBP"
+}
+
+
+{
+  "merchant": {
+    "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+  },
+  "card": {
+    "number": "3530111333300000",
+    "expirationDate": "01/2027",
+    "cvv": "322",
+    "holderName": "Dilichukwu Okoye"
+  },
+  "amount": 12,
+  "currency": "GBP"
+}
