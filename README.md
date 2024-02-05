@@ -155,6 +155,8 @@ Efficient test coverage using Nunit and moq accross the different layers of the 
 **Areas of Improvement**
 - A proper database infrastructure would be ideal instead of an in-memory state
 - Complete containerization using docker
+- Include cicd pipeline using github actions or jenkins
+- A preferred authentication mechanism like OAuth2.0 or JWT
 - All keys stored in the appsettings.json file should be stored in a secure vault, like aws paramter store for the rate limit key pair values and aws secret manager for the api key
 - Leveraging on Transactional outbox pattern and a proper pub/sub & queueing system (SNS,SQS) in place where once the payment or transaction is saved successfully in a database and a subsequently published to a queue, it can be subscribed via another instance to complete the transaction process
 - A much more robust test case alongside with an automated unit test, typical scenarios such as an automated load test to ensure that the api can handle and respond to a specific threashold of request.
