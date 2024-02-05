@@ -131,6 +131,7 @@ It returns a successful response except for scenarios such as using a blackliste
 #### ✨Extra  Miles✨ 
 **Security: Authentication**
 Authentication via api key. An API key is an identifier assigned to an API client, used to authenticate an application calling the API. It is typically a unique alphanumeric string included in the API call, which the API receives and validates.
+The Api key is passed in the header of the request as x-api-key, and the middleware validates the key before the request is processed. The key is stored in the appsettings.json file in the Checkout.PaymentGateway.Api project. **8C56D316296F487988D0CEFF4B0BB1F6**
 
 **Idempotency**
 An idempotent endpoint is one that can be called any number of times while guaranteeing that the side effects will occur only once.
@@ -150,6 +151,7 @@ The rate limit configuration is set up in the appsettings.json in Checkout.Payme
 **Areas of Improvement**
 - A proper database infrastructure would be ideal instead of an in-memory state
 - Complete containerization using docker
+- All keys stored in the appsettings.json file should be stored in a secure vault, like aws paramter store for the rate limit key pair values and aws secret manager for the api key
 - Leveraging on Transactional outbox pattern and a proper pub/sub & queueing system (SNS,SQS) in place where once the payment or transaction is saved successfully in a database and a subsequently published to a queue, it can be subscribed via another instance to complete the transaction process
 - A much more robust test case alongside with an automated unit test, typical scenarios such as an automated load test to ensure that the api can handle and respond to a specific threashold of request.
 - Efficient file logging that can be fed to various data monitoring tools like Datadog or cloud watch
